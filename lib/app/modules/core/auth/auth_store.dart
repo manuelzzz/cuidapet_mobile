@@ -10,13 +10,5 @@ abstract class AuthStoreBase with Store {
 
   Future<void> loadUserLogged() async {
     _userLogged = UserModel.empty();
-
-    Future.delayed(const Duration(seconds: 3), () {
-      _userLogged = UserModel.fromMap({
-        'email': 'email',
-        'registerType': 'registerType',
-        'imgAvatar': 'imgAvatar',
-      });
-    });
   }
 }

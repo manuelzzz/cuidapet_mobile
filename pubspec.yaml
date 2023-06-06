@@ -30,7 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_modular: ^4.5.1+1
+  flutter_modular: ^5.0.3
   mobx: ^2.0.6+1
   flutter_mobx: ^2.0.4
   asuka: ^2.1.0
@@ -62,7 +62,7 @@ flutter:
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
-  # the material Icons class.
+  # the material Icons class. 
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:

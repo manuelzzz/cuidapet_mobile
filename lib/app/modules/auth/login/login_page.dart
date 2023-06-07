@@ -1,8 +1,12 @@
+import 'package:cuidapet_mobile/app/core/ui/extensions/size_screen_extension.dart';
+import 'package:cuidapet_mobile/app/core/ui/extensions/theme_extension.dart';
 import 'package:cuidapet_mobile/app/core/ui/icons/cuidapet_icons.dart';
-import 'package:cuidapet_mobile/app/core/ui/widgets/cuidapet_default_button.dart';
 import 'package:cuidapet_mobile/app/core/ui/widgets/cuidapet_textform_field.dart';
 import 'package:cuidapet_mobile/app/core/ui/widgets/rounded_button_with_icon.dart';
 import 'package:flutter/material.dart';
+
+part 'widgets/login_form.dart';
+part 'widgets/login_register_buttons.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -12,65 +16,28 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  final _testeEC = TextEditingController();
-  final _formKey = GlobalKey<FormState>();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Login Page'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Form(
-          key: _formKey,
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(15),
           child: Column(
             children: [
-              CuidapetTextformField(
-                label: 'login',
-                obscureText: false,
-                controller: _testeEC,
-                validator: (String? value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Valor obrigatório';
-                  }
-                  return null;
-                },
+              SizedBox(
+                height: 50.h,
               ),
-              ElevatedButton(
-                onPressed: () => _formKey.currentState?.validate(),
-                child: const Text('Validar'),
-              ),
-              RoundedButtonWithIcon(
-                onTap: () {},
-                label: 'Apple',
-                width: 200,
-                color: Colors.black,
-                icon: CuidapetIcons.apple,
-              ),
-              RoundedButtonWithIcon(
-                onTap: () {},
-                label: 'Facebook',
-                width: 200,
-                color: Colors.blue,
-                icon: CuidapetIcons.facebook,
-              ),
-              RoundedButtonWithIcon(
-                onTap: () {},
-                label: 'Google',
-                width: 200,
-                color: Colors.orange,
-                icon: CuidapetIcons.google,
-              ),
-              CuidapetDefaultButton(
-                onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text('Clicou'),
-                  ),
+              Center(
+                child: Image.asset(
+                  'images/logo.png',
+                  width: 162.w,
+                  fit: BoxFit.fill,
                 ),
-                label: 'Entrar',
               ),
+              const SizedBox(height: 10),
+              const _LoginForm(),
+              const SizedBox(height: 10),
+              const _LoginRegisterButtons(),
             ],
           ),
         ),

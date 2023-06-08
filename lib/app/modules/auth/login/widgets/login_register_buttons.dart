@@ -31,7 +31,10 @@ class __LoginRegisterButtonsState extends State<_LoginRegisterButtons> {
           label: 'Google',
         ),
         RoundedButtonWithIcon(
-          onTap: () {},
+          onTap: () => Navigator.pushNamed(
+            context,
+            '/auth/register',
+          ),
           width: .42.sw,
           color: context.primaryColor,
           icon: Icons.mail,

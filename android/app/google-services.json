@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "663239096613",
+    "project_id": "cuidapet-mobile-manel",
+    "storage_bucket": "cuidapet-mobile-manel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663239096613:android:67f42b72ff0e75147e42cc",
+        "android_client_info": {
+          "package_name": "br.com.academidoflutter.cuidapet_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663239096613-nep7q5gksfiohs3ssem6gvgljpk9h9li.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIWYmk3AKdKn4-y71VBAiLrCPs9VuHkCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663239096613-nep7q5gksfiohs3ssem6gvgljpk9h9li.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

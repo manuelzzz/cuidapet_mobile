@@ -8,7 +8,7 @@ class CuidapetLogoImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Image.asset(
-        'images/logo.png',
+        'assets/images/logo.png',
         width: 162.w,
         fit: BoxFit.fill,
       ),

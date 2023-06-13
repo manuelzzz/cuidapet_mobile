@@ -17,5 +17,5 @@ class ApplicationConfig {
     );
   }
 
-  Future<void> _loadEnv() => Enviroments.loadEnvs();
+  Future<void> _loadEnv() async => await Enviroments.loadEnvs();
 }

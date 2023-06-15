@@ -21,6 +21,11 @@ class _LoginFormState extends State<_LoginForm> {
             label: 'senha',
             obscureText: true,
           ),
+          const SizedBox(height: 20),
+          CuidapetDefaultButton(
+            onPressed: () {},
+            label: 'Entrar',
+          ),
           const _OrSeparator(),
         ],
       ),
